@@ -1,0 +1,284 @@
+.red {
+    color: red;
+}
+
+span {
+    font-weight: bold;
+}
+
+:root {
+    --primary-blue: #5BACC3;
+    --neutral-graphite: #393939;
+    --neutral-pink: #FFF0ED;
+    --neutral-light-gray: #F7F7F7;
+    --neutral-white: #FFFFFF;
+}
+
+/* Font Weights */
+.font-light { font-weight: 300; }
+.font-regular { font-weight: 400; }
+.font-bold { font-weight: 700; }
+.font-italic { font-style: italic; }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400; 
+    color: var(--neutral-graphite);
+    background-color: var(--neutral-white);
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+h1 {
+    font-size: 60px;
+    font-weight: 300; 
+    color: var(--neutral-graphite);
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 300; 
+    color: var(--neutral-graphite);
+}
+
+h3 {
+    font-size: 33px;
+    font-weight: 300; 
+    color: var(--neutral-graphite);
+}
+
+.sub-nav {
+    width: 100%;
+    background-color: var(--neutral-graphite); 
+    color: var(--neutral-white); /* White */
+    padding: 10px 20px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.sub-nav h1 {
+    font-size: 33px;
+    font-weight: 300;
+    color: var(--primary-blue);
+}
+
+.sub-nav ul {
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-nav ul li {
+    font-size: 21px;
+    font-weight: 400; /* Regular */
+    color: var(--neutral-graphite);
+}
+
+.sub-nav ul li a {
+    text-decoration: none;
+    color: var(--neutral-white);
+}
+
+.article {
+    height: 280;
+    
+}
+
+/* Block Styles */
+.products {
+    width: 100%;
+    padding: 40px;
+    background-color: #f7f7f7;
+}
+
+.products__heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Card Styles */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.product-card__name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-card__image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product-card__price {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* View All Button */
+.products__view-all-btn {
+    background-color: #5bacc3;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.products__view-all-btn:hover {
+    background-color: #4d98b3;
+}
+
+
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    justify-content: center; 
+    background-color: var(--neutral-graphite); /* Graphite */
+    color: var(--neutral-white); /* White */
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Bar Logo/Title */
+nav a {
+    justify-content:left
+}
+
+/* Navigation Bar Logo/Title */
+nav h2 {
+    font-size: 33px; /* Text size for "nitro" */
+    font-weight: 200; /* Light font weight */
+    margin: 0;
+}
+
+/* Navigation List */
+nav ul {
+    list-style: none; 
+    display: flex; 
+    gap: 30px; 
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation List Items */
+nav ul li {
+    font-size: 21px; /* Text size for navigation links */
+    font-weight: 400; /* Regular font weight */
+}
+/* Anchor Tags in Navigation */
+nav ul li a {
+    justify-content: center;    text-decoration: none; /* Remove underline */
+    color: var(--neutral-white); /* White text */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: var(--primary-blue); /* Change to Nitro-Blue on hover */
+}
+
+
+div {
+    background-color: var(--neutral-pink); 
+    color: var(--neutral-graphite); /* White */
+}
+div h2 {
+    text-align: center;
+}
+div h3 {
+    text-align: center;
+}
+
+div p {
+    text-align: center;
+    font-style: italic;
+}
+.social {
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    font-style: italic;
+}
+.social a {
+    margin: 10px; /* Adds spacing between the icons */
+    
+}
+
+.social img {
+    width: 40px; 
+    height: auto; 
+}
+.headerbg {
+    background-color: var(--neutral-pink); 
+    color: var(--neutral-graphite);
+}
+
+.footerbg {
+    background-color: var(--neutral-pink); 
+    color: var(--neutral-graphite);
+}
+
+
+.discount {
+    background-color: var(--neutral-graphite); 
+    color: var(--neutral-white); /* White */
+}
+
+.price {
+    color: var(--primary-blue); /* White */
+}
+
+/* Buttons */
+button {
+    background-color: var(--primary-blue);
+    color: var(--neutral-white);
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 700; /* Bold */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--neutral-pink);
+    color: var(--neutral-graphite);
+}
+/* Discount Section */
+.discount {
+    background-color: #393939;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.discount__text {
+    font-size: 20px;
+    font-weight: bold;
+}

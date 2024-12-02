@@ -1,0 +1,143 @@
+.red {
+    color: red;
+}
+
+span {
+    font-weight: bold;
+}
+
+:root {
+    --primary-blue: #5BACC3;
+    --neutral-graphite: #393939;
+    --neutral-pink: #FFF0ED;
+    --neutral-light-gray: #F7F7F7;
+    --neutral-white: #FFFFFF;
+}
+
+/* Font Weights */
+.font-light { font-weight: 300; }
+.font-regular { font-weight: 400; }
+.font-bold { font-weight: 700; }
+.font-italic { font-style: italic; }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400; 
+    color: var(--neutral-graphite);
+    background-color: var(--neutral-white);
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+h1 {
+    font-size: 60px;
+    font-weight: 300; 
+    color: var(--primary-blue);
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 300; 
+    color: var(--neutral-graphite);
+}
+
+h3 {
+    font-size: 33px;
+    font-weight: 300; 
+    color: var(--neutral-graphite);
+}
+
+
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    justify-content: center; 
+    background-color: var(--neutral-graphite); /* Graphite */
+    color: var(--neutral-white); /* White */
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Bar Logo/Title */
+nav a {
+    justify-content:left
+}
+
+/* Navigation Bar Logo/Title */
+nav h2 {
+    font-size: 33px; /* Text size for "nitro" */
+    font-weight: 200; /* Light font weight */
+    margin: 0;
+}
+
+/* Navigation List */
+nav ul {
+    list-style: none; 
+    display: flex; 
+    gap: 30px; 
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation List Items */
+nav ul li {
+    font-size: 21px; /* Text size for navigation links */
+    font-weight: 400; /* Regular font weight */
+}
+/* Anchor Tags in Navigation */
+nav ul li a {
+    justify-content: center;    text-decoration: none; /* Remove underline */
+    color: var(--neutral-white); /* White text */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: var(--primary-blue); /* Change to Nitro-Blue on hover */
+}
+
+.menu-section {
+    width: 100%;
+    height: 700px;
+    background-image: url('../assets/coffee-circle.jpg'); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    
+}
+
+div {
+    background-color: var(--neutral-pink); 
+    color: var(--neutral-graphite); /* White */
+}
+div h2 {
+    text-align: center;
+}
+div h3 {
+    text-align: center;
+}
+
+div p {
+    text-align: center;
+    font-style: italic;
+}
+
+
+
+.hotdrinks {
+    background-color: var(--neutral-pink); 
+    color: var(--neutral-graphite); /* White */
+}
+
+
+.pastries {
+    background-color: var(--neutral-pink); 
+    color: var(--neutral-graphite); /* White */
+}
+
+.colddrinks {
+    background-color: var(--neutral-white); 
+    color: var(--neutral-graphite); /* White */
+}
